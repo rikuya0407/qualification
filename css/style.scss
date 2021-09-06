@@ -1,0 +1,96 @@
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    margin: 0;
+}
+
+header{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    & .header-title{
+        margin-left: 15px;
+    }
+    & .header-btn{
+        margin-top: 40px;
+        display: none;
+    }
+    & .icon{
+       margin-right: 15px;
+       margin-top: 5px;
+    }
+}
+
+.swiper {
+    width: 90%;
+    height: 300px;
+    & .swiper-slide{
+        width: 100%;
+        position: relative;
+        & img{
+            width: 100%;
+        }
+        & .swiper-word{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            z-index: 100;
+            transform: translate(-50%,-50%);
+            font-size: 24px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 128, 0.418);
+            padding: 10px;
+        }
+    }
+}
+
+main{
+    margin-top: 30px;
+    text-align: center;
+    & .search-form{
+        width: 200px;
+        height: 30px;
+    }
+    & .search-btn{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    
+    & .search-result{
+        width: 90%;
+        margin: 0 auto;
+        & ul{
+            padding: 0;
+            & li{
+                height: 100px;
+                line-height: 50px;
+                display: flex;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                & p{
+                    width: 100%;
+                    white-space: nowrap;
+                    justify-content: space-around;
+                }
+                & a{
+                    width: 100%;
+                    white-space: nowrap;
+                    justify-content: space-around;
+                    line-height: 85px;
+                }
+            }
+        }
+    }
+}

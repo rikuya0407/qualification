@@ -1,0 +1,38 @@
+body {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-right: 15px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+header .header-title {
+  margin-left: 15px;
+}
+
+header .icon {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+main .main-word h1 {
+  margin-left: 15px;
+}
+
+main .lank {
+  text-align: center;
+}
+
+main .lank img {
+  width: 200px;
+}
+/*# sourceMappingURL=lank.css.map */

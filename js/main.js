@@ -1,17 +1,7 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    effect: 'coverflow',
-    grabCursor:true,
-    centerSlides:true,
-    slidesPerView:1,
-    speed:1000,
-    breakpoints: {
-        800: {
-            slidesPerView:3,
-        }
-    },
-    autoplay:{
-        delay:4000,
-        disableOnInteraction:false
-    },
-});
+// const continer = document.querySelector('.continer');
+// const icon = document.querySelector('.icon');
+
+
+// icon.addEventListener('click',function(){
+//     continer.classList.toggle('inview');
+// })

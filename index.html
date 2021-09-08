@@ -14,88 +14,122 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-title">
-            <h1>タイトル</h1>
-        </div>
-        <div class="header-btn">
-            <button class="btn">資格一覧</button>
-            <button class="btn">進捗状況</button>
-            <button class="btn">ランキング</button>
-            <button class="btn">マイページ</button>
-        </div>
-        <div class="icon">
-            <p><i class="fas fa-id-card fa-3x"></i></p>
-        </div>
-    </header>
-    <!-- Slider  -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="img/slide1.jpg" alt="">
-                <p class="swiper-word">勉強しましょう</p>
+    <div class="continer">
+        <header>
+            <div class="header-title">
+                <h1>タイトル</h1>
             </div>
-            <div class="swiper-slide">
-                <img src="img/slide2.png" alt="">
-                <p class="swiper-word">勉強しましょう</p>
+            <div class="search">
+                <input type="text" class="search-form" placeholder="検索キーワード">
+                <i class="fas fa-search"></i>
             </div>
-            <div class="swiper-slide">
-                <img src="img/slide3.png" alt="">
-                <p class="swiper-word">勉強しましょう</p>
+            <!-- <div class="header-btn">
+                <div class="btn">資格一覧</div>
+                <div class="btn">進捗状況</div>
+                <div class="btn">ランキング</div>
+                <div class="btn">マイページ</div>
+            </div> -->
+            <div class="icon">
+                <p><i class="fas fa-id-card fa-3x"></i></p>
             </div>
-        </div>
-    </div>
+        </header>
+        
+        <main>
+            <div class="now-watch">
+                <h1>視聴していた動画</h1>
+                <div class="my-watch">
+                    <div class="qualification">
+                        <img src="img/eng.jpg" alt="">
+                        <a href="">[TOEIC]あなたのためのTOEIC</a>
+                    </div>
+                    <div class="qualification">
+                        <img src="img/powerpoint.png" alt="">
+                        <a href="">[PowerPoint]あなたのためのパワポ</a>
+                    </div>
+                </div>
+            </div>
+           <!-- ランキング項目 -->
+           <div class="ranking">
+               <h1>今週の人気コンテンツ</h1>
+                <!-- Slider  -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/slide1.jpg" alt="">
+                            <p class="swiper-word">基本情報技術者対策</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide2.png" alt="">
+                            <p class="swiper-word">初心者のためのWord</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide3.png" alt="">
+                            <p class="swiper-word">ビジネスとは?</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <!-- あなたにおすすめコンテンツ -->
+           <div class="recommendation">
+               <h1>あなたにおすすめのコンテンツ</h1>
+               <!-- Slider  -->
+               <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/excel.png" alt="">
+                        <p class="swiper-word">初心者のExcel</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/boki.jpg" alt="">
+                        <p class="swiper-word">日商簿記対策</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/network.jpg" alt="">
+                        <p class="swiper-word">ネットワークとは?</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <!-- 企業が進めるコンテンツ -->
+           <div class="recommendation">
+            <h1>企業推奨項目</h1>
+            <!-- Slider  -->
+            <div class="swiper">
+             <!-- Additional required wrapper -->
+             <div class="swiper-wrapper">
+                 <!-- Slides -->
+                 <div class="swiper-slide">
+                     <img src="img/social-media.jpg" alt="">
+                     <p class="swiper-word">ソーシャルメディアとは？</p>
+                 </div>
+                 <div class="swiper-slide">
+                     <img src="img/typing.jpg" alt="">
+                     <p class="swiper-word">タイピング講座</p>
+                 </div>
+                 <div class="swiper-slide">
+                     <img src="img/programing.jpg" alt="">
+                     <p class="swiper-word">初めてのプログラミング</p>
+                 </div>
+             </div>
+         </div>
+           <!-- その他 -->
+            <div class="search-result">
+                <h1>その他の動画一覧は</h1>
+                <a href="">こちら</a>
+            </div>
+        </main>
     
-    <main>
-        <div class="search">
-            <input type="text" class="search-form" placeholder="検索キーワード"><br>
-            <button class="search-btn">検索</button>
-        </div>
-        <div class="search-result">
-            <ul>
-                <li>
-                    <p>学習タイトルA</p>
-                    <p>
-                        達成度
-                        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
-                    </p>
-                    <a href="./lank.html">順位</a>
-                    <!-- <p>順位:1位</p> -->
-                </li>
-                <li>
-                    <p>学習タイトルB</p>
-                    <p>
-                        達成度
-                        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
-                    </p>
-                    <a href="./lank.html">順位</a>
-                    <!-- <p>順位:2位</p> -->
-                </li>
-                <li>
-                    <p>学習タイトルC</p>
-                    <p>
-                        達成度
-                        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
-                    </p>
-                    <a href="./lank.html">順位</a>
-                    <!-- <p>順位:3位</p> -->
-                </li>
-                <li>
-                    <p>学習タイトルD</p>
-                    <p>
-                        達成度
-                        <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
-                    </p>
-                    <a href="./lank.html">順位</a>
-                    <!-- <p>順位:4位</p> -->
-                </li>
-            </ul>
-        </div>
-    </main>
+        <footer>
+            <h1>PERSOL <br>はたらいて、笑おう。</h1>
+        </footer>
+    </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

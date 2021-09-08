@@ -1,6 +1,8 @@
 body{
     font-family: 'Sawarabi Mincho', sans-serif;
     margin: 0;
+    // position: relative;
+    // z-index: 100;
 }
 
 header{
@@ -13,19 +15,32 @@ header{
     & .header-title{
         margin-left: 15px;
     }
-    & .header-btn{
-        margin-top: 40px;
-        display: none;
+    // & .header-btn{
+    //     position: fixed;
+    //     right: 20px;
+    //     top: 10px;
+    //     z-index: -1; 
+    // }
+    & .search{
+        margin-top: 30px;
+        & .search-form{
+            width: 150px;
+            height: 30px;
+        }
+        & i{
+            cursor: pointer;
+        }
     }
     & .icon{
        margin-right: 15px;
        margin-top: 5px;
+       cursor: pointer;
     }
 }
 
 .swiper {
-    width: 90%;
-    height: 300px;
+    width: 80%;
+    height: 200px;
     & .swiper-slide{
         width: 100%;
         position: relative;
@@ -44,6 +59,7 @@ header{
             border-radius: 10px;
             background-color: rgba(128, 128, 128, 0.418);
             padding: 10px;
+            white-space: nowrap;
         }
     }
 }
@@ -51,47 +67,56 @@ header{
 main{
     margin-top: 30px;
     text-align: center;
-    & .search-form{
-        width: 200px;
-        height: 30px;
-    }
-    & .search-btn{
-        margin-top: 20px;
-        margin-bottom: 50px;
-        width: 100px;
-        height: 30px;
-        cursor: pointer;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 10px;
-    }
-
-    
-    & .search-result{
-        width: 90%;
-        margin: 0 auto;
-        & ul{
-            padding: 0;
-            & li{
-                height: 100px;
-                line-height: 50px;
-                display: flex;
-                border: 1px solid black;
-                border-radius: 10px;
-                margin-bottom: 20px;
-                cursor: pointer;
-                & p{
+    & .now-watch{
+        margin-bottom: 100px;
+        & .my-watch{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            & .qualification{
+                width: 100%;
+                height: 250px;
+                max-width: 300px;
+                margin-right: 50px;
+                & img{
                     width: 100%;
-                    white-space: nowrap;
-                    justify-content: space-around;
-                }
-                & a{
-                    width: 100%;
-                    white-space: nowrap;
-                    justify-content: space-around;
-                    line-height: 85px;
+                    height: 100%;
                 }
             }
         }
     }
+    
+    & .ranking{
+        margin-bottom: 100px;
+    }
+
+    & .recommendation{
+        margin-bottom: 100px;
+    }
+    
+    & .search-result{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        & a{
+            font-size: 24px;
+        }
+    }
 }
+
+
+footer{
+    height: 100px;
+    background-color:rgba(128, 128, 128, 0.534) ;
+    color: white;
+    & h1{
+        margin-left: 50px;
+    }
+}
+
+// .inview{
+//     border: 2px solid black;
+//     transform: translate(-200px,50px);
+//     transition: transform 1s;
+// }

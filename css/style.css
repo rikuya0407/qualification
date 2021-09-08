@@ -20,19 +20,28 @@ header .header-title {
   margin-left: 15px;
 }
 
-header .header-btn {
-  margin-top: 40px;
-  display: none;
+header .search {
+  margin-top: 30px;
+}
+
+header .search .search-form {
+  width: 150px;
+  height: 30px;
+}
+
+header .search i {
+  cursor: pointer;
 }
 
 header .icon {
   margin-right: 15px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 .swiper {
-  width: 90%;
-  height: 300px;
+  width: 80%;
+  height: 200px;
 }
 
 .swiper .swiper-slide {
@@ -57,6 +66,7 @@ header .icon {
   border-radius: 10px;
   background-color: rgba(128, 128, 128, 0.418);
   padding: 10px;
+  white-space: nowrap;
 }
 
 main {
@@ -64,55 +74,56 @@ main {
   text-align: center;
 }
 
-main .search-form {
-  width: 200px;
-  height: 30px;
+main .now-watch {
+  margin-bottom: 100px;
 }
 
-main .search-btn {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 10px;
+main .now-watch .my-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .now-watch .my-watch .qualification {
+  width: 100%;
+  height: 250px;
+  max-width: 300px;
+  margin-right: 50px;
+}
+
+main .now-watch .my-watch .qualification img {
+  width: 100%;
+  height: 100%;
+}
+
+main .ranking {
+  margin-bottom: 100px;
+}
+
+main .recommendation {
+  margin-bottom: 100px;
 }
 
 main .search-result {
   width: 90%;
   margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-main .search-result ul {
-  padding: 0;
+main .search-result a {
+  font-size: 24px;
 }
 
-main .search-result ul li {
+footer {
   height: 100px;
-  line-height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.534);
+  color: white;
 }
 
-main .search-result ul li p {
-  width: 100%;
-  white-space: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-main .search-result ul li a {
-  width: 100%;
-  white-space: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  line-height: 85px;
+footer h1 {
+  margin-left: 50px;
 }
 /*# sourceMappingURL=style.css.map */

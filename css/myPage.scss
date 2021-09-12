@@ -62,15 +62,16 @@ main{
         & .qualification{
             width: 100%;
             display: flex;
+            justify-content: space-around;
             margin-bottom: 15px;
             & img{
                 width: 150px;
-                margin-right: 20px;
+                // margin-right: 20px;
             }
             & a{
                 width: 300px;
                 margin-top: 15px;
-                margin-right: 100px;
+                // margin-right: 100px;
             }
             & .goal{
                 text-align: center;
@@ -82,9 +83,9 @@ main{
                     width: 200px;
                 }
             }
-            & .point{
-                margin-left: 100px;
-            }
+            // & .point{
+            //     // margin-left: 100px;
+            // }
         }
     }
 }

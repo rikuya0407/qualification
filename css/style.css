@@ -22,6 +22,9 @@ header .header-title {
 
 header .search {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header .search .search-form {

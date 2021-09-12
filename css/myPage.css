@@ -74,18 +74,18 @@ main .full-movie .qualification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 15px;
 }
 
 main .full-movie .qualification img {
   width: 150px;
-  margin-right: 20px;
 }
 
 main .full-movie .qualification a {
   width: 300px;
   margin-top: 15px;
-  margin-right: 100px;
 }
 
 main .full-movie .qualification .goal {
@@ -99,9 +99,5 @@ main .full-movie .qualification .goal p {
 
 main .full-movie .qualification .goal .meter {
   width: 200px;
-}
-
-main .full-movie .qualification .point {
-  margin-left: 100px;
 }
 /*# sourceMappingURL=myPage.css.map */

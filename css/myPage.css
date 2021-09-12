@@ -63,7 +63,7 @@ main .point-flame {
 }
 
 main .full-movie {
-  width: 90%;
+  width: 55%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -99,5 +99,9 @@ main .full-movie .qualification .goal p {
 
 main .full-movie .qualification .goal .meter {
   width: 200px;
+}
+
+main .full-movie .qualification .point {
+  white-space: nowrap;
 }
 /*# sourceMappingURL=myPage.css.map */
